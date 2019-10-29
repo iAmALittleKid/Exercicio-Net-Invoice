@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Double Linked List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <script>
+            //Function Testing
+
+            alert("Double Linked List");
+            let doubleLinked = new DoubleLinkedList("Audi");
+            alert(doubleLinked.add("Toyota"));
+            alert(doubleLinked.add("Mercedes"));
+            alert(doubleLinked.add("BMW"));
+            alert(doubleLinked.find("Audi").key);
+            alert(doubleLinked.find("Toyota").key);
+            //remove element from end of list
+            alert(doubleLinked.remove("BMW"));
+            //remove element from middle of the list
+            alert(doubleLinked.remove("Toyota"));
+            //remove element from beginning of list
+            alert(doubleLinked.remove("Audi"));
+            //Search for an element that has been removed
+            alert(doubleLinked.find("Audi"));
+            //try to remove a non existent element (has been removed)
+            alert(doubleLinked.remove("Audi"));
+            //remove the only element on the list(first and last)
+            alert(doubleLinked.remove("Mercedes"));
+            alert(doubleLinked.add("Porsche"));
+        </script>
+        
+    </body>
+</html>
